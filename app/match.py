@@ -16,10 +16,9 @@ class Match:
             return "{0} plays with {1} | 0-0".format(self.p1, self.p2)
 
         if self.p1_wins > self.p2_wins:
-            return self.form_score( self.played_sets, self.p1 )
+            return self.form_score(self.played_sets, self.p1)
         else:
-            return self.form_score( self.played_sets, self.p2 )
-            
+            return self.form_score(self.played_sets, self.p2)
 
     def win_set(self, player, set_num, points1, points2):
         if self.p1 == player:
